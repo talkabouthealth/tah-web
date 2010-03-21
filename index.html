@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="Talkmi provides real-time health support by matching people with similar health concerns for live conversations." >
+<meta name="keywords" content="health, support, real-time, live" >
+<title>Talkmi - Home</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css" >
+<title>Talkmi - Real-time health support</title>
+</head>
+
+<body>
+
+<script type='text/javascript'>
+function emailValidator(elem, helperMsg)
+{
+	var emailExp = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+	if(elem.value.match(emailExp)){
+		return true;
+	}else{
+		alert(helperMsg);
+		elem.focus();
+		return false;
+	}
+}
+
+function formValidator()
+{
+    var emailExp = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+    var elem = document.getElementById('emailer');
+    if(elem.value.match(emailExp))
+    {
+		return true;
+	}
+	else
+	{
+		alert("Invalid email address!");
+		elem.focus();
+		return false;
+	}
+}
+</script>
+
+<div class="top">
+	<div class="top_inside">
+		<div><img src="images/top_bar.jpg" alt="" width="948" height="114"></div>
+		<div><img src="images/menu_bar.jpg" alt="" width="948" height="51"></div>
+	</div>
+</div>
+<div class="content">
+	<div><img src="images/spacer.gif" alt="" width="10" height="10"></div>
+	<div class="content_area">
+		<div><img src="images/content_top.jpg" alt=""></div>
+		<h1>Real-time health support</h1>
+		<h2>Connect with peers anonymously in a supportive environment</h2>
+		<div class="email">
+			<div><img src="images/email_top.jpg" alt=""></div>
+			<div style="font-family: calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color: black; padding-left: 20px;">Receive the latest news and updates from Talkmi!</div>
+			<div><img src="images/spacer.gif" alt="" width="10" height="5"></div>
+			<div style="width: 390px; padding-left: 20px;">
+			
+			   <form action="storeemail.php" method="post" onSubmit="return formValidator()" style="padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px; font-family: calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 18px; color: black;">
+			   Your email: <input name="email" type="text" size="15" style="font-size: 18px;" id='emailer'/> &nbsp;&nbsp;&nbsp;
+			   <input name="submit" type="submit" value="Sign Up!" style="font-size: 18px;"/>
+			   </form>
+			   
+			</div>
+			<div><img src="images/spacer.gif" alt="" width="10" height="5"></div>
+			<div style="font-family: calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: italic; color: black; padding-left: 20px;">Your email will remain safe and private</div>
+			<div><img src="images/email_bottom2.jpg" alt=""></div>
+		</div>
+		<div class="right_text">
+			<h3>How does Talkmi work?</h3>
+				<p style="font-size: 18px;">1. Send a question or comment to Talkmi.</p>
+				<p style="font-size: 18px;">2. Talkmi finds the perfect group for your needs.</p>
+				<p style="font-size: 18px;">3. Begin a live conversation within minutes.</p>
+		</div>
+		<div style="clear: both;"><img src="images/spacer.gif" alt="" width="10" height="25"></div>
+		<div style="margin-left: 0px; padding-left: 0px;">
+			<div class="left_side">
+				<div><img src="images/spacer.gif" alt="" width="10" height="20"></div>
+				<p style="padding-top: 0px; margin-top: 0px;">&bull; Feel better after sharing experiences with peers.</p>
+
+				<p>&bull; Meet others just like you, develop friendships, and expand your support network.</p>
+
+				<p>&bull; Be more prepared after talking to experienced peers.</p>
+				
+			</div>
+			<div class="right_side">
+				<div>
+					<div class="small_photo"><img src="images/woman2.jpg" alt=""></div>
+					<div class="testimonial">&quot;I want to meet others who understand what I am going through.&quot; - Delores B.</div>
+				</div>
+				<div style="clear: right;"><img src="images/spacer.gif" alt="" width="10" height="10"></div>
+				<div>
+					<div class="small_photo"><img src="images/woman1.jpg" alt=""></div>
+					<div class="testimonial">&quot;I would like other people’s opinions on best hospitals and physicians for my health issue.&quot; - Susan P.</div>
+				</div>
+				<div style="clear: right;"><img src="images/spacer.gif" alt="" width="10" height="10"></div>
+				<div>
+					<div class="small_photo"><img src="images/man1.jpg" alt=""></div>
+					<div class="testimonial"><div>&quot;Sometimes I need to talk to someone in the middle of the night.&quot; - John H.</div>
+				</div>
+				<div style="clear: right;"><img src="images/spacer.gif" alt="" width="10" height="1"></div>
+			</div>
+		</div>
+		<div><img src="images/spacer.gif" alt="" width="10" height="10"></div>
+		<div><img src="images/content_bottom.jpg" alt=""></div>
+	</div>
+	</div>
+</div>
+<div><img src="images/spacer.gif" alt="" width="10" height="10"></div>
+<div class="bottom">
+	<div class="bottom_inside">
+		<div class="bottom_menu">
+		<a href="mailto:support@talkmi.com">Contact Us</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="about.html">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-13005583-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>

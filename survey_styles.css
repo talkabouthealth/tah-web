@@ -1,0 +1,100 @@
+/* CSS Document */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #D3D7E3;
+}
+
+.top {
+	background-image: url(images/top_bar_bkgd.jpg);
+	background-repeat: repeat-x;
+}
+
+.top_inside {
+	width: 948px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.content {
+	background-image: url(images/content_bkgd.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+}
+
+.content_area {
+ 	width: 945px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+}
+
+.content_area h1 {
+	font-family: calibri, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	color: black;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-bottom: 2px;
+	padding-bottom: 2px;
+}
+.content_area h4 {
+	font-family: calibri, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: black;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-bottom: 2px;
+	padding-bottom: 2px;
+}
+
+.content_area h2 {
+	font-family: calibri, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	color: black;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+.content_area h3 {
+	font-family: calibri, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 28px;
+	font-weight: bold;
+	color: black;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+.content_area p {
+	font-family: calibri, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: black;
+}
+
+
+.bottom {
+	background-image: url(images/bottom_bar_bkgd.jpg);
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+
+.bottom_inside {
+	width: 948px;
+	height: 40px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.bottom_menu {
+	font-family: calibri, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	color: black;
+	padding-top: 10px;
+}
