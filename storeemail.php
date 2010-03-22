@@ -1,10 +1,10 @@
 <?php
           /* Start of PHP3 Script */ 
           /* Data of SQL-server */ 
-          $server= "db2285.perfora.net";     /* Address of 1&1 database server */ 
-          $user= "dbo317697468";                   /* Database user name */ 
-          $password= "applepie";              /* Database Password */ 
-          $database= "db317697468";             /* name of database */ 
+          $server= "localhost";     /* Address of database server */ 
+          $user= "tah_web";                   /* Database user name */ 
+          $password= "ppl8Cake(*&";              /* Database Password */ 
+          $database= "tah_web";             /* name of database */ 
           $table= "email";                /* Name of table, you can select that */ 
 					$column1= "email";
 										
