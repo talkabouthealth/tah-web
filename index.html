@@ -1,34 +1,28 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<meta name="description" content="Talkmi provides real-time health support by matching people with similar health concerns for live conversations." >
-<meta name="keywords" content="health, support, real-time, live" >
-<title>Talkmi - Home</title>
-<link rel="stylesheet" type="text/css" href="stylesheet.css" >
-<title>Talkmi - Real-time health support</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Welcome</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<style>
+body {
+	margin: 0px;
+	padding:0px;
+	font-family:arial;
+	font-size:11px;
+	color:#000000;
+	background:url(images/pagebg.gif) repeat-x top;
+	}
+</style>
 </head>
 
 <body>
-
 <script type='text/javascript'>
-function emailValidator(elem, helperMsg)
-{
-	var emailExp = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
-	if(elem.value.match(emailExp)){
-		return true;
-	}else{
-		alert(helperMsg);
-		elem.focus();
-		return false;
-	}
-}
 
 function formValidator()
 {
     var emailExp = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
-    var elem = document.getElementById('emailer');
+    var elem = document.getElementById('textfield');
     if(elem.value.match(emailExp))
     {
 		return true;
@@ -40,94 +34,133 @@ function formValidator()
 		return false;
 	}
 }
+function submitForm() {
+	if(formValidator() == false)
+		return false;
+	alert("Submitting: " + document.storeemail.email.value);
+    document.storeemail.submit();
+}
+
 </script>
 
-<div class="top">
-	<div class="top_inside">
-		<div><img src="images/top_bar.jpg" alt="" width="948" height="114"></div>
-		<div><img src="images/menu_bar.jpg" alt="" width="948" height="51"></div>
-	</div>
+<div id="top_container">
+<div id="top">
+<div id="logo"><a href="#"><img src="images/spacer.gif" alt="Talk About Health" width="328" height="73" border="0" /></a> </div>
+<div id="topright"><span class="blacktext"><!--Sign in with your</span> --><br />
+  <div class="icon"><!--<a href="#"><img src="images/twitter.gif" alt="Twitter" width="27" height="27" border="0" /></a></div><div class="icon"><a href="#"><img src="images/facebook.gif" alt="facebook" width="27" height="27" border="0"/></a>--></div> 
 </div>
-<div class="content">
-	<div><img src="images/spacer.gif" alt="" width="10" height="10"></div>
-	<div class="content_area">
-		<div><img src="images/content_top.jpg" alt=""></div>
-		<h1>Real-time health support</h1>
-		<h2>Connect with peers anonymously in a supportive environment</h2>
-		<div class="email">
-			<div><img src="images/email_top.jpg" alt=""></div>
-			<div style="font-family: calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color: black; padding-left: 20px;">Receive the latest news and updates from Talkmi!</div>
-			<div><img src="images/spacer.gif" alt="" width="10" height="5"></div>
-			<div style="width: 390px; padding-left: 20px;">
-			
-			   <form action="storeemail.php" method="post" onSubmit="return formValidator()" style="padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px; font-family: calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 18px; color: black;">
-			   Your email: <input name="email" type="text" size="15" style="font-size: 18px;" id='emailer'/> &nbsp;&nbsp;&nbsp;
-			   <input name="submit" type="submit" value="Sign Up!" style="font-size: 18px;"/>
-			   </form>
-			   
-			</div>
-			<div><img src="images/spacer.gif" alt="" width="10" height="5"></div>
-			<div style="font-family: calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: italic; color: black; padding-left: 20px;">Your email will remain safe and private</div>
-			<div><img src="images/email_bottom2.jpg" alt=""></div>
-		</div>
-		<div class="right_text">
-			<h3>How does Talkmi work?</h3>
-				<p style="font-size: 18px;">1. Send a question or comment to Talkmi.</p>
-				<p style="font-size: 18px;">2. Talkmi finds the perfect group for your needs.</p>
-				<p style="font-size: 18px;">3. Begin a live conversation within minutes.</p>
-		</div>
-		<div style="clear: both;"><img src="images/spacer.gif" alt="" width="10" height="25"></div>
-		<div style="margin-left: 0px; padding-left: 0px;">
-			<div class="left_side">
-				<div><img src="images/spacer.gif" alt="" width="10" height="20"></div>
-				<p style="padding-top: 0px; margin-top: 0px;">&bull; Feel better after sharing experiences with peers.</p>
-
-				<p>&bull; Meet others just like you, develop friendships, and expand your support network.</p>
-
-				<p>&bull; Be more prepared after talking to experienced peers.</p>
-				
-			</div>
-			<div class="right_side">
-				<div>
-					<div class="small_photo"><img src="images/woman2.jpg" alt=""></div>
-					<div class="testimonial">&quot;I want to meet others who understand what I am going through.&quot; - Delores B.</div>
-				</div>
-				<div style="clear: right;"><img src="images/spacer.gif" alt="" width="10" height="10"></div>
-				<div>
-					<div class="small_photo"><img src="images/woman1.jpg" alt=""></div>
-					<div class="testimonial">&quot;I would like other people’s opinions on best hospitals and physicians for my health issue.&quot; - Susan P.</div>
-				</div>
-				<div style="clear: right;"><img src="images/spacer.gif" alt="" width="10" height="10"></div>
-				<div>
-					<div class="small_photo"><img src="images/man1.jpg" alt=""></div>
-					<div class="testimonial"><div>&quot;Sometimes I need to talk to someone in the middle of the night.&quot; - John H.</div>
-				</div>
-				<div style="clear: right;"><img src="images/spacer.gif" alt="" width="10" height="1"></div>
-			</div>
-		</div>
-		<div><img src="images/spacer.gif" alt="" width="10" height="10"></div>
-		<div><img src="images/content_bottom.jpg" alt=""></div>
-	</div>
-	</div>
+<div id="topmid"><!--<a href="#" class="bluetext">Join Now</a> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;<a href="#" class="redtext">Sign In</a> --></div>
 </div>
-<div><img src="images/spacer.gif" alt="" width="10" height="10"></div>
-<div class="bottom">
-	<div class="bottom_inside">
-		<div class="bottom_menu">
-		<a href="mailto:support@talkmi.com">Contact Us</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<a href="about.html">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		</div>
-	</div>
+<div id="text_heading"></div>
 </div>
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("UA-13005583-1");
-pageTracker._trackPageview();
-} catch(err) {}</script>
+<div id="banner"></div>
+<div id="bottom_container">
+<div id="middle_area">
+<div id="arealeft">
 
+<div id="curvetophome"></div>
+
+<div id="arealefttextarea">
+<div id="comingsoonhead" class="bluetext30">&nbsp;Coming Soon</div>
+<div id="dashedborder"></div>
+<div id="arealeftgrey" class="blacktext14">&nbsp;<strong>Sign up to receive the latest on our beta program and launch.</strong><br />
+  <span class="pinktext14">&nbsp;(Your email won't be used for anything else.)</span></div>
+  <div id="homefields">
+<ul>
+
+<form name="storeemail" action="storeemail.php" method="post" onSubmit="return formValidator()" >
+<li><input name="email" type="text" class="textfields" id="textfield" onclick="this.value=''"  value="Your Email Address..." />
+</li>
+</ul>    
+  </div>
+  <div id="arearightbutton"><a name="submitbutton" href="javascript:void(1);" onClick="submitForm();"><img src="images/signupbutton.gif" width="126" height="46" border="0" /></a></div>
+</form>
+
+
+  
+  <div id="arealefttext">Your email will remain safe and private
+</div>
+  
+</div>
+
+<div id="curvebottom"></div>
+</div>
+<div id="arearight">
+<h1>Support Communities</h1>
+<ul>
+<li><span class="blacktext"><strong>Breast Cancer</strong></span><br />
+  <span class="bluetext2">Coming Soon!</span></p>
+  <li><span class="blacktext"><strong>Skin Cancer</strong></span><br />
+  <span class="bluetext2">Coming Soon!</span></p>
+</ul>
+<p><span class="blacktext"><strong>Multiple Sclerosis</strong></span><br />
+  <span class="bluetext2">Coming Soon!</span></p>
+</div>
+<div id="boxarea_head">
+<h1><span class="blacktext2">How does</span> <span class="greentext">Talk</span><span class="blueext30">About</span><span class="pinktext30">Health</span><span class="blacktext2"> work?</span></h1>
+</div>
+<div id="boxarea">
+<div class="box">
+<div class="box_top"><img src="images/1img.jpg" width="294" height="160" alt="" /></div>
+<div class="boxmid">Share your Question or Comment<br /> 
+  <p>Send us a question or comment to start a conversation.<br /><br /></p></div>
+<div class="box_bot"></div>
+</div>
+<div class="box">
+<div class="box_top"><img src="images/2img.jpg" width="294" height="160" alt="" /></div>
+<div class="boxmid">We find the right Group for you.<br /> 
+  <p>We find the right members to answer your questions, give advice, and share their experiences.</p></div>
+<div class="box_bot"></div>
+</div>
+<div id="box3">
+<div class="box_top"><img src="images/3img.jpg" width="294" height="160" alt="" /></div>
+<div class="boxmid">Talk to your Support Group.<br /> 
+  <p>Within minutes, you&#146;ll be having a live &ndash; and anonymous &ndash; group conversation.<br /><br /></p></div>
+<div class="box_bot"></div>
+</div>
+</div>
+<div id="bottomboxarea">
+<div class="bottomboxinnerarea">
+<div id="boxarea1">
+<h3><span class="red">Meet</span> others like you</h3>
+<p>Grow your support network and make new friends who understand.</p>
+
+</div>
+<div class="colantext"><span class="blacktext14">Sometimes I need to talk to someone in the middle of the night.</span>&nbsp; <img src="images/colanbottom.gif"  width="19" height="15" /> <br />  
+  <span class="bluetext14">John H.</span></div>
+</div>
+
+<div class="bottomboxinnerarea">
+<div id="boxarea2">
+<h3><span class="green">Learn </span> from peers</h3>
+<p>Be more prepared after talking to experienced peers.  Request their advice and opinions.</p>
+
+</div>
+<div class="colantext"><span class="blacktext14">I would like other people's opinions on best hospitals and physicians for my health issue.
+&nbsp; </span><img src="images/colanbottom.gif" /> <br />
+<span class="bluetext14">Susan P.</span></div>
+</div>
+<div class="bottomboxinnerarea2">
+<div id="boxarea3">
+<h3><span class="purple">Share  </span> your experiences</h3>
+<p>Feel better after sharing your experiences with peers who understand. Others will learn from you.</p>
+
+</div>
+<div class="colantext"><span class="blacktext14">I want to meet others who understand what I am going through.
+</span><img src="images/colanbottom.gif" /> <br />
+  <span class="bluetext14">Ashley R.</span></div>
+</div>
+
+</div>
+
+</div>
+</div>
+<div id="footerarea">
+<div id="footer">
+<div id="footerleft"><div id="footericons">Find us on Facebook and Twitter <a href="http://www.facebook.com/pages/TalkAboutHealth/123999230963635?ref=sgm" ><img src="images/facebookfooter.gif" width="17" height="17" border="0" /></a>&nbsp;&nbsp;<a href="http://twitter.com/talkforhealth"><img src="images/twitterfooter.gif" width="17" height="17" border="0" /></a></div> 
+| <a href="http://blog.talkabouthealth.com" class="footerlink">Blog</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="faq.htm" class="footerlink">Faq</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="mailto:support@talkabouthealth.com" class="footerlink">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="aboutus.htm" class="footerlink">About Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="privacypolicy.htm" class="footerlink">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="termsofservice.htm" class="footerlink">Terms of Service</a></div>
+<div id="footerright"><img src="images/footerlogo.gif" width="237" height="25" alt="" /></div>
+</div>
+</div>
 </body>
 </html>
